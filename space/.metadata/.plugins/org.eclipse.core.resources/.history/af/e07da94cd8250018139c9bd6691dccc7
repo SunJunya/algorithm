@@ -1,0 +1,14 @@
+package com.hashmap;
+
+public class HashMap {
+
+	public static void main(String[] args) {
+		int t1=1;
+		int t2=2;
+		String str1 = "1";
+		String str2 = "1";
+		System.out.println(str1.hashCode());
+		System.out.println(str2.hashCode());
+	}
+
+}

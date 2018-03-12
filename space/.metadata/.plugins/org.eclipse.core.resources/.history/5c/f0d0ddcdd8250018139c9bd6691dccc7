@@ -1,0 +1,31 @@
+package com.hashmap;
+
+class Student{
+	private int a;
+
+	public int getA() {
+		return a;
+	}
+
+	public void setA(int a) {
+		this.a = a;
+	}
+
+	public Student(int a) {
+		super();
+		this.a = a;
+	}
+	
+}
+
+public class HashMap {
+
+	public static void main(String[] args) {
+		Student str1=new Student(2);
+		Student str2=new Student(2);
+		System.out.println(str1.equals(str2));
+		System.out.println(str1.hashCode());
+		System.out.println(str2.hashCode());
+	}
+
+}
