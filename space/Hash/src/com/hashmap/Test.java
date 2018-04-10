@@ -50,7 +50,7 @@ public class Test {
 
     
     public static Map<String, Integer> resolve(List<Integer> order, Map<String, List<Integer>> boms) {
-    	 Map<String, Integer> map = new HashMap<>();
+    	 Map<String, Integer> map = new HashMap<String, Integer>();
     	 Integer[][] bom = null;
     	 int i=0;
     	 Iterator<String> key=boms.keySet().iterator();

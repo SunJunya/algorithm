@@ -1,0 +1,25 @@
+package com.exception;
+/**
+	@author:sunjunya
+*/
+public class TestFinally {
+
+	public static void main(String[] args) {
+		int num=10;
+		System.out.println(test(num));
+	}
+
+	public static int test(int num) {
+		try {
+			num+=10;
+			return num;
+		} catch(RuntimeException e){
+			
+		}
+		finally {
+			num+=10;
+			return num;
+		}
+	}
+
+}

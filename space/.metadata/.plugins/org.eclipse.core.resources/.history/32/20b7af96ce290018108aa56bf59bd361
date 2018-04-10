@@ -1,0 +1,37 @@
+package com.fibonacciSearch;
+/**
+	@file_name:Test.java
+	@author:sunjunya
+	@time:ÏÂÎç6:22:13
+*/
+public class Test {
+
+	public static void main(String[] args) {
+		int[] a={};
+		int key=59;
+		int index=fibonacciSearch(a,a.length-1,key);
+	}
+
+	private static int fibonacciSearch(int[] a, int i, int key) {
+		int low=0;
+		int high=i;
+		int k=0;
+		while(i>fibonacci(k)-1){
+			k++;
+		}
+		return 0;
+	}
+
+	private static int fibonacci(int k) {
+		if(k==1){
+			return 1;
+		}
+		else if(k==0){
+			return 0;
+		}
+		else{
+			return fibonacci(k-1)+fibonacci(k-2);
+		}
+	}
+
+}

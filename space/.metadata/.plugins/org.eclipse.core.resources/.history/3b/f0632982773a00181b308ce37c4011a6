@@ -1,0 +1,40 @@
+package com.niuke01;
+
+import java.util.Scanner;
+
+/**
+	@author:sunjunya
+*/
+public class Question01 {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		if(in.hasNext()){
+			int a=in.nextInt();
+			int an=in.nextInt();
+			int b=in.nextInt();
+			int bn=in.nextInt();
+			
+			String v1=repeat(a,an);
+			String v2=repeat(b,bn);
+			System.out.println("v1="+v1);
+			System.out.println("v2="+v2);
+			
+			String string1="1234";
+			String string2="70";
+			System.out.println(string1.compareTo(string2));
+		}
+	}
+
+	private static String repeat(int a, int an) {
+		
+		StringBuffer reStr=new StringBuffer(String.valueOf(a));
+		for(int i=0;i<an-1;i++){
+			reStr.append(String.valueOf(a));
+		}
+		
+		String re=reStr.toString();
+		return re;
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.codeblock;
+/**
+	@author:sunjunya
+*/
+public class CodeBlock {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Father{
+	
+}
+
+class Son extends Father{
+	
+}

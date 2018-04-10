@@ -1,0 +1,73 @@
+package com.niuke01;
+
+import java.util.Scanner;
+
+/**
+	@author:sunjunya
+*/
+public class Question01 {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		if(in.hasNext()){
+			int a=in.nextInt();
+			int an=in.nextInt();
+			int b=in.nextInt();
+			int bn=in.nextInt();
+			
+			String v1=repeat(a,an);
+			String v2=repeat(b,bn);
+			System.out.println("v1="+v1);
+			System.out.println("v2="+v2);
+			
+			if(MYcompareTo(v1,v2)>0){
+				System.out.println(v1.compareTo(v2));
+				System.out.println("Greate");
+			}else if(MYcompareTo(v1,v2)<0){
+				System.out.println(v1.compareTo(v2));
+				System.out.println("Less");
+			}else {
+				System.out.println(v1.compareTo(v2));
+				System.out.println("Enqual");
+			}
+		}
+	}
+
+	private static int MYcompareTo(String v1, String v2) {
+		int len1 = v1.length();
+        int len2 = v2.length();
+        int lim = Math.min(len1, len2);
+        char cv1[] = v1.toCharArray();
+        char cv2[] = v2.toCharArray();
+
+        if(len1>len2){
+        	return len1-len2;
+        }else {
+        	int k = 0;
+            while (k < lim) {
+                char c1 = cv1[k];
+                char c2 = cv2[k];
+                if (c1 != c2) {
+                    return c1 - c2;
+                }
+                k++;
+            }
+		}
+        
+        
+        
+	}
+
+	private static String repeat(int a, int an) {
+		
+		StringBuffer reStr=new StringBuffer(String.valueOf(a));
+		for(int i=0;i<an-1;i++){
+			reStr.append(String.valueOf(a));
+		}
+		
+		String re=reStr.toString();
+		return re;
+	}
+	
+	
+}

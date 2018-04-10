@@ -1,0 +1,13 @@
+package com.fibonacciSearch;
+/**
+	@file_name:TEst.java
+	@author:sunjunya
+	@time:обнГ6:22:13
+*/
+public class Test {
+
+	public static void main(String[] args) {
+
+	}
+
+}

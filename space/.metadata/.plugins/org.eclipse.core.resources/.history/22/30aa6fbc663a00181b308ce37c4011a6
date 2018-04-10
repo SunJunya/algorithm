@@ -1,0 +1,11 @@
+package com.exception;
+/**
+	@author:sunjunya
+*/
+public class TestFinally {
+
+	public static void main(String[] args) {
+
+	}
+
+}

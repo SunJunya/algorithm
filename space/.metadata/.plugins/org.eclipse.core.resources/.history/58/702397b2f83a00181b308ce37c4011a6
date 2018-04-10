@@ -1,0 +1,19 @@
+package com.niuke01;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+/**
+	@author:sunjunya
+*/
+public class Question03 {
+
+	public static void main(String[] args) {
+		Stack<String> strStack=new Stack<>();
+		Scanner in=new Scanner(System.in);
+		String string=in.nextLine();
+		char[] strs=string.toCharArray();
+		
+	}
+
+}

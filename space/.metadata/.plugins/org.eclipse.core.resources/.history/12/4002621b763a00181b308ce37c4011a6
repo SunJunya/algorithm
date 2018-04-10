@@ -1,0 +1,44 @@
+package com.niuke01;
+
+import java.util.Scanner;
+
+/**
+	@author:sunjunya
+*/
+public class Question01 {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		if(in.hasNext()){
+			int a=in.nextInt();
+			int an=in.nextInt();
+			int b=in.nextInt();
+			int bn=in.nextInt();
+			
+			String aInteger=repeat(a,an);
+			String bInteger=repeat(b,bn);
+			System.out.println(aInteger);
+			System.out.println(bInteger);
+			
+			if(aInteger.compareTo(bInteger)>0){
+				System.out.println("Greate");
+			}else if(aInteger.compareTo(bInteger)<0){
+				System.out.println("Less");
+			}else {
+				System.out.println("Enqual");
+			}
+		}
+	}
+
+	private static String repeat(int a, int an) {
+		
+		StringBuffer reStr=new StringBuffer(String.valueOf(a));
+		for(int i=0;i<an-1;i++){
+			reStr.append(String.valueOf(a));
+		}
+		
+		String re=reStr.toString();
+		return re;
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.niuke01;
+
+import java.util.Stack;
+
+/**
+	@author:sunjunya
+*/
+public class Question03 {
+
+	public static void main(String[] args) {
+		Stack<String> str=new Stack<>();
+		
+	}
+
+}

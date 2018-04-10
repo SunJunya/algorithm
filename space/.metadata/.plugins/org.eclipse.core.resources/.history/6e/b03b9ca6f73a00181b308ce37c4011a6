@@ -1,0 +1,38 @@
+package com.niuke01;
+
+import java.util.Scanner;
+
+/**
+	@author:sunjunya
+*/
+public class Question2 {
+
+	public static void main(String[] args) {
+		/*
+		 * 考虑定义在两正整数上的函数SSR(平方根之和的平方):SSR(A, B) = (sqrt(A) + sqrt(B))^2。牛牛对函数值为整数的情况很感兴趣。
+		 * 现在给定整数n和m,请帮助牛牛计算有序对(A, B)的数量, 满足1 ≤ A ≤ n, 1 ≤ B ≤ m而且SSR(A, B)是一个整数。
+		 * */
+		int count=0;
+		Scanner in =new Scanner(System.in);
+		int n=in.nextInt();
+		int m=in.nextInt();
+		
+		for(int i=1;i<=n;i++){
+			for(int j=1;j<=m;j++){
+				if(i==j){
+					count++;
+				}else{
+					int a=(int) Math.sqrt(i*j);
+					if(a*a==i*j){
+						count++;
+					}
+					
+				}
+				
+			}
+		}
+		System.out.println(count);
+		
+	}
+
+}
